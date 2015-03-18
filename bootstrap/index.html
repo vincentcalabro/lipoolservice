@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Employee Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap-v3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://use.edgefonts.net/source-sans-pro.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row-fluid">
+        <div id="content" class="span12"></div>
+    </div>
+</div>
+
+<script src="lib/jquery-1.9.1.min.js"></script>
+<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>
+<script src="bootstrap-v3.3.2/js/bootstrap.js"></script>
+
+<script src="js/app.js"></script>
+<script src="js/views/shell.js"></script>
+<script src="js/views/home.js"></script>
+<script src="js/views/contact.js"></script>
+<script src="js/views/services.js"></script>
+<script src="js/views/employeelist.js"></script>
+<script src="js/views/employeedetails.js"></script>
+<script src="js/plugins/wow.min.js"></script>
+<script src="js/plugins/jquery-ui.min.js"></script>
+<script src="js/plugins/jquery.backstretch.js"></script>
+<script>
+$(document).ready(function() {
+	$("html,.aps").backstretch([
+		"img/bg/1.JPG", 
+		"img/bg/2.JPG",
+		"img/bg/3.JPG",
+		"img/bg/4.JPG",
+		"img/bg/5.JPG",
+	], {duration: 5000, fade: 2000});
+});
+ new WOW().init();
+</script>
+
+<!-- SELECT ONE (AND ONLY ONE) OF THE DATA PERSISTENCE SOLUTIONS BELOW -->
+
+<!-- Uncomment the script below to access the application data using an in-memory data store -->
+<script src="js/models/model-in-memory.js"></script>
+
+<!-- Uncomment the script below to access the application data using RESTful services. Open model-rest.js and adjust the URL attributes to reflect your URL endpoints. -->
+<!--<script src="js/models/model-rest.js"></script>-->
+
+<!-- Uncomment the script below to access the application data using RESTful services with JSONP. Open model-rest.js and adjust the URL attributes to reflect your REST endpoints. -->
+<!--<script src="js/models/model-rest-jsonp.js"></script>-->
+
+<!-- Uncomment the two scripts below to use Parse.com as the data persistence layer. -->
+<!--<script src="lib/parse-1.2.2.min.js"></script>-->
+<!--<script src="js/models/model-parse-com.js"></script>-->
+
+</body>
+</html>
